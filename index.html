@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="dark" />
+    <meta
+      name="description"
+      content="Postcards from a lo-fi, GenAI-imagined jungle: beasts, sounds, and an invented animal language."
+    />
+    <title>Postcards from my jungle</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./script.js" defer></script>
+  </head>
+
+  <body>
+    <div class="bg-noise" aria-hidden="true"></div>
+
+    <header class="topbar">
+      <div class="brand">
+        <h1>Postcards from my jungle</h1>
+        <p class="subtitle">lo-fi beasts, borrowed tongues</p>
+      </div>
+
+      <div class="top-controls">
+        <button class="btn" id="shuffleBtn" type="button" title="Shuffle postcards">
+          Shuffle
+        </button>
+
+        <label class="switch" title="Automatically advance slides">
+          <input id="autoAdvanceToggle" type="checkbox" />
+          <span>Auto-advance</span>
+        </label>
+
+        <label class="switch" title="Auto-play sound on slide change (requires a click first)">
+          <input id="autoSoundToggle" type="checkbox" />
+          <span>Auto-play sound</span>
+        </label>
+      </div>
+    </header>
+
+    <main class="wrap">
+      <section class="postcard" aria-label="Postcard viewer">
+        <div class="media">
+          <div class="counter" id="counter">1 / 1</div>
+          <img
+            id="animalImg"
+            class="hero"
+            alt=""
+            decoding="async"
+            fetchpriority="high"
+          />
+        </div>
+
+        <div class="panel">
+          <div class="headline">
+            <h2 id="animalName">Loading...</h2>
+            <p class="meta" id="animalMeta"></p>
+          </div>
+
+          <div class="language">
+            <p class="phrase" id="animalPhrase" lang="x-jungle"></p>
+            <p class="gloss" id="animalGloss" hidden></p>
+
+            <div class="row">
+              <button class="btn btn-quiet" id="toggleGlossBtn" type="button">
+                Show translation
+              </button>
+
+              <button class="btn btn-quiet" id="copyBtn" type="button">
+                Copy phrase
+              </button>
+
+              <a class="btn btn-quiet" id="downloadLink" href="#" download>
+                Download image
+              </a>
+            </div>
+          </div>
+
+          <div class="player" aria-label="Animal sound player">
+            <div class="row">
+              <button class="btn" id="prevBtn" type="button" aria-label="Previous postcard">
+                Prev
+              </button>
+
+              <button class="btn btn-accent" id="playBtn" type="button" aria-label="Play sound">
+                Play sound
+              </button>
+
+              <button class="btn" id="nextBtn" type="button" aria-label="Next postcard">
+                Next
+              </button>
+            </div>
+
+            <div class="scrub">
+              <input
+                id="progress"
+                class="range"
+                type="range"
+                min="0"
+                max="100"
+                value="0"
+                step="0.1"
+                aria-label="Audio progress"
+              />
+              <div class="time">
+                <span id="timeNow">0:00</span>
+                <span id="timeDur">0:00</span>
+              </div>
+            </div>
+
+            <div class="row row-tight">
+              <label class="vol">
+                <span>Vol</span>
+                <input
+                  id="volume"
+                  class="range"
+                  type="range"
+                  min="0"
+                  max="1"
+                  value="0.8"
+                  step="0.01"
+                  aria-label="Volume"
+                />
+              </label>
+
+              <span class="hint" id="hint">
+                Tip: use left and right arrows to navigate.
+              </span>
+            </div>
+
+            <audio id="audio" preload="metadata"></audio>
+          </div>
+        </div>
+      </section>
+
+      <section class="strip" aria-label="Thumbnail strip">
+        <div class="strip-head">
+          <h3>All postcards</h3>
+          <p class="strip-sub">Scroll, then tap a thumbnail.</p>
+        </div>
+
+        <div id="thumbs" class="thumbs" role="list"></div>
+      </section>
+
+      <noscript>
+        <div class="noscript">
+          This site needs JavaScript to show the slideshow and play sounds.
+        </div>
+      </noscript>
+    </main>
+
+    <footer class="foot">
+      <p>
+        Generated jungle archive.
+      </p>
+    </footer>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  </body>
+</html>

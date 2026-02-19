@@ -19,7 +19,7 @@
 */
 
 const CONFIG = {
-  imageCount: 4,
+  imageCount: 50,
   soundCount: 4,
 
   // Filenames used when postcards.json is missing:

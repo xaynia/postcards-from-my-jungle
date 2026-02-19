@@ -1,0 +1,117 @@
+{
+    "phrases":
+    [
+        {
+            "id": 1,
+            "intent": "Greeting",
+            "animal_text": "salo-mii raku",
+            "english_gloss": "Hello, friend.",
+            "mood": "friendly"
+        },
+        {
+            "id": 2,
+            "intent": "I am here",
+            "animal_text": "tari raku ha",
+            "english_gloss": "I am here.",
+            "mood": "neutral"
+        },
+        {
+            "id": 3,
+            "intent": "Who are you?",
+            "animal_text": "saki-na ra ku",
+            "english_gloss": "Who are you?",
+            "mood": "curious"
+        },
+        {
+            "id": 4,
+            "intent": "Predator nearby",
+            "animal_text": "haku-ku raku naga",
+            "english_gloss": "Warning: predator is near.",
+            "mood": "alert"
+        },
+        {
+            "id": 5,
+            "intent": "Storm coming",
+            "animal_text": "goru-ku raku sharo",
+            "english_gloss": "Warning: storm is coming.",
+            "mood": "alert"
+        },
+        {
+            "id": 6,
+            "intent": "I am hungry",
+            "animal_text": "naki raku",
+            "english_gloss": "I am hungry.",
+            "mood": "needy"
+        },
+        {
+            "id": 7,
+            "intent": "Food found",
+            "animal_text": "sago raku naku",
+            "english_gloss": "I found food.",
+            "mood": "pleased"
+        },
+        {
+            "id": 8,
+            "intent": "Come closer",
+            "animal_text": "toko-tok raku",
+            "english_gloss": "Come closer!",
+            "mood": "urgent"
+        },
+        {
+            "id": 9,
+            "intent": "Go away",
+            "animal_text": "gato-tok raku",
+            "english_gloss": "Go away!",
+            "mood": "commanding"
+        },
+        {
+            "id": 10,
+            "intent": "Follow me",
+            "animal_text": "rilo-tok raku",
+            "english_gloss": "Follow me!",
+            "mood": "urgent"
+        },
+        {
+            "id": 11,
+            "intent": "I am hurt",
+            "animal_text": "hira raku",
+            "english_gloss": "I am hurt.",
+            "mood": "pained"
+        },
+        {
+            "id": 12,
+            "intent": "Safe place",
+            "animal_text": "saro raku",
+            "english_gloss": "This is a safe place.",
+            "mood": "reassuring"
+        },
+        {
+            "id": 13,
+            "intent": "Night is coming",
+            "animal_text": "gori-ku raku noro",
+            "english_gloss": "Warning: night is coming.",
+            "mood": "alert"
+        },
+        {
+            "id": 14,
+            "intent": "Play with me",
+            "animal_text": "lako-mii raku",
+            "english_gloss": "Play with me.",
+            "mood": "friendly"
+        },
+        {
+            "id": 15,
+            "intent": "My territory",
+            "animal_text": "tago raku saro",
+            "english_gloss": "This is my territory.",
+            "mood": "firm"
+        },
+        {
+            "id": 16,
+            "intent": "Farewell",
+            "animal_text": "sala raku",
+            "english_gloss": "Farewell.",
+            "mood": "calm"
+        }
+    ]
+}

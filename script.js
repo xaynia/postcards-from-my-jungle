@@ -27,7 +27,7 @@ const CONFIG = {
   imagePrefix: 'animal-',
   imagePad:
   3,
-  imageExt: 'jpg',
+  imageExt: 'png',
 
   // sounds/beast-01.wav ... sounds/beast-04.wav
   soundPrefix: 'sound-',

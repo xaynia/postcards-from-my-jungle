@@ -18,3 +18,6 @@ For language generation, I used a transformer model to produce 16 phrases with c
 
 ## How quality could be improved
 Image quality could improve with more diverse, higher resolution training data, longer training with careful monitoring, and more controlled sampling and noise schedule choices. Sound quality could improve by generating more candidates per prompt, increasing inference steps, and applying light postprocessing (EQ and noise reduction) to reduce diffusion artifacts.
+
+## Dataset used for training
+https://huggingface.co/datasets/ldgravy/Medieval-Bestiary

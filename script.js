@@ -19,14 +19,13 @@
 */
 
 const CONFIG = {
-  imageCount: 4,
+  imageCount: 50,
   soundCount: 4,
 
   // Filenames used when postcards.json is missing:
   // images/animal-001.webp ... images/animal-050.webp
   imagePrefix: 'animal-',
-  imagePad:
-  3,
+  imagePad: 3,
   imageExt: 'png',
 
   // sounds/beast-01.wav ... sounds/beast-04.wav

@@ -33,6 +33,10 @@ body {
   height: 100%;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   margin: 0;
   font-family: var(--sans);
@@ -118,6 +122,10 @@ body {
   padding: 0 16px;
   display: grid;
   gap: 16px;
+}
+
+.wrap > * {
+  min-width: 0;
 }
 
 .postcard {
@@ -319,6 +327,7 @@ body {
   border-radius: var(--radius2);
   background: var(--card);
   box-shadow: var(--shadow);
+  min-width: 0;
 }
 
 .strip-head h3 {
@@ -341,6 +350,10 @@ body {
   overflow-x: auto;
   padding-bottom: 6px;
   scroll-snap-type: x mandatory;
+  max-width: 100%;
+  min-width: 0;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
 }
 
 .thumb {
@@ -352,6 +365,7 @@ body {
   cursor: pointer;
   min-width: 120px;
   width: 120px;
+  flex: 0 0 auto;
 }
 
 .thumb[aria-current="true"] {
